@@ -3,7 +3,7 @@
 import AC from 'agora-chat'
 
 // Replaces <Your app key> with your app key.
-const appKey = "<Your app key>";
+const appKey = `${import.meta.env.VITE_CHAT_ORGNAME}#${import.meta.env.VITE_CHAT_APPNAME}`;
 // Initializes the Web client.
 const conn = new AC.connection({
     appKey: appKey,
